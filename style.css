@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100vw;
+    background-color: #d2e3e8;
+    padding:60px 0 ;
+    position: relative;
+}
+.wrapper button{
+    outline: 0;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+    position: absolute;
+    left: 73.6vw;
+    top: 25px;
+    color: #fff;
+    background-color: #088BFF;
+    cursor: pointer;
+}
+.invoice{
+    display: block;
+    width: 780px;
+    padding: 80px 0;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #333; 
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+}
+.logo img{
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+}
+
+.basic{
+    margin: 40px 60px;
+}
+.basic p{
+    line-height: 32px;
+    position: relative;
+    font-weight: 200;
+}
+.basic p span{
+    position: absolute;
+    left: 270px;
+}
+
+.total{
+    margin: 40px 60px;
+}
+.total p{
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    padding-left: 10px;
+    line-height: 32px;
+    position: relative;
+    font-weight: 200;
+    color: #088BFF;
+    font-weight: 600;
+}
+.total p span{
+    color: #333;
+    position: absolute;
+    left: 270px;
+}
+.delivery{
+    margin: 60px 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.delivery h2{
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #088BFF;
+}
+.delivery p{
+    line-height: 25px;
+    position: relative;
+    font-weight: 200;
+}
+
+.table{
+    margin: 40px 60px;
+    display: grid;
+    grid-template-columns:repeat(3, minmax(0, 4fr));
+    border-top:1px solid #eaeaea;
+    border-left:1px solid #eaeaea;
+}
+.table div{
+    border-right:1px solid #eaeaea;
+    border-bottom:1px solid #eaeaea;
+    padding: 7px 15px;
+}
+.table div h4{
+    color: #088BFF;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script type="text/javascript">
+            function makePDF(){
+                const elm = document.getElementById("invoice");
+
+                html2pdf()
+                .from(elm)
+                .save("invoice")
+            }   
+    </script>
+    <title>html2pdf-js</title>
+</head>
+<body>
+    <div class="wrapper">
+        <button onclick="makePDF()" >Print</button>
+        <div id="invoice" class="invoice">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="basic">
+                <p>Order No: <span>10000052</span></p>
+                <p>Service: <span>Nursing Care (Mother care)</span></p>
+                <p>Duration: <span>12 hours</span></p>
+                <p>Placed on: <span>2021-08-24</span></p>
+                <p>Order Status: <span>Processing</span></p>
+            </div>
+            <div class="total">
+                <p>Subtotal <span>1500.00</span></p>
+                <p>Others <span>0.00</span></p>
+                <p>Total <span>1500.000</span></p>
+            </div>
+            <div class="delivery">
+                <div>
+                    <h2>Delivery Address</h2>
+                    <p>Sajidur Rahman</p>
+                    <p>015803572549</p>
+                    <p>Narayanganj, Bangladesh</p>
+                </div>
+                <div>
+                    <h2>Billing Address</h2>
+                    <p>Sajidur Rahman</p>
+                    <p>015803572549</p>
+                    <p>Narayanganj, Bangladesh</p>
+                </div>
+            </div>
+            <div class="table">
+                <div><h4>Name</h4></div>
+                <div><h4>Price</h4></div>
+                <div><h4>Quantity</h4></div>
+
+                <div><p>Acitrin</p></div>
+                <div><p>30.09</p></div>
+                <div><p>5</p></div>
+
+                <div><p>Adelax</p></div>
+                <div><p>5.02</p></div>
+                <div><p>1.0</p></div>
+
+                <div><p>Atova 1.0</p></div>
+                <div><p>10.00</p></div>
+                <div><p>1.0</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
