@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script type="text/javascript">
+
             function makePDF(){
                 const elm = document.getElementById("invoice");
 
@@ -25,11 +29,24 @@
                 <img src="./img/logo.png" alt="">
             </div>
             <div class="basic">
-                <p>Order No: <span>10000052</span></p>
-                <p>Service: <span>Nursing Care (Mother care)</span></p>
-                <p>Duration: <span>12 hours</span></p>
-                <p>Placed on: <span>2021-08-24</span></p>
-                <p>Order Status: <span>Processing</span></p>
+                <div class="time">
+                    <div><i class="far fa-clock"></i></div>
+                    <div><i class="far fa-check-circle"></i></div>
+                    <div><i class="fas fa-hourglass-start"></i></div>
+
+                    <div>Duration</div>
+                    <div>Placed on</div>
+                    <div>Order status</div>
+
+                    <div>12 hours</div>
+                    <div>2021-08-24</div>
+                    <div>Processsing</div>
+                </div>
+                <div class="order">
+                    <p>Nursing Care (Mother care)</p>
+                    <p>Order No. 10000052 </p>
+                    <p></p>
+                </div>
             </div>
             <div class="total">
                 <p>Subtotal <span>1500.00</span></p>
@@ -66,6 +83,22 @@
                 <div><p>Atova 1.0</p></div>
                 <div><p>10.00</p></div>
                 <div><p>1.0</p></div>
+            </div>
+            <div class="last">
+                <p class="thanks">Thank you!</p>
+                <div class="signature">
+                    <p>Jhon Doe</p>
+                    <p>Account manager</p>
+                </div>
+            </div>
+            <p class="terms">Terms & Conditions: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nam itaque quo ipsam, quos voluptatem doloribus.</p>
+
+            <div class="link">
+                <div><p><i class="fas fa-phone-alt"></i> +8801817659832</p></div>
+                <div><p><i class="fas fa-envelope"></i> info@healthx.com.bd</p></div>
+                <div><p><i class="fas fa-home"></i> Block L, House 26</p>
+                    <p>Dhaka 1212</p>
+                </div>
             </div>
         </div>
     </div>
