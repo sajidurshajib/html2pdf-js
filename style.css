@@ -23,22 +23,19 @@
 .invoice{
     display: block;
     width: 800px;
-    padding: 80px 0;
+    min-height: 1042px;
+    padding: 30px 0 0 0;
     margin: 0 auto;
     background-color: #fff;
     color: #333; 
     font-family: Calibri, sans-serif;
     font-size: 12px;
-}
-.logo img{
-    display: block;
-    margin: 0 auto;
-    width: 15%;
+    position: relative;
 }
 
 .basic{
     display: grid;
-    grid-template-columns: 60% 50%;
+    grid-template-columns: 60% 40%;
     margin: 40px 60px;
 }
 
@@ -69,10 +66,36 @@
     font-size: 16px;
 }
 
-.order{
-    color: #555;
+
+.logo img{
+    display: block;
+    position:absolute;
+    right: 0;
+    width: 40%;
+}
+.right{
+    position: relative;
+}
+.right .r-text{
+    position: absolute;
+    right: 0;
     text-align: right;
-    padding-right: 60px;
+    top:35px;
+}
+.right .r-text p{
+    font-size: 14px;
+    padding-top:5px;
+}
+.right .r-text p i{
+    color: #088BFF;
+    padding-right: 5px;
+}
+
+
+.order{
+    color: #000;
+    text-align: left;
+    padding-left: 60px;
 }
 .order p:first-child{
     font-weight: 600;
@@ -101,6 +124,29 @@
     position: absolute;
     left: 270px;
 }
+
+.terms{
+    color: #fff;
+    background-color: #088BFF;
+    text-align: left;
+    padding: 10px;
+    width: 70%;
+    margin-left:60px;
+    position: relative;
+}
+.terms::after{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border-top:24px solid #088BFF;
+    border-left:24px solid #088BFF;
+    border-right:24px solid transparent;
+    border-bottom:24px solid #088BFF;
+    right: -48px;
+    top: 0;
+}
+
 .delivery{
     margin: 60px 60px;
     display: grid;
@@ -159,27 +205,10 @@
     font-size: 12px;
     padding-top: 5px;
 }
-.terms{
-    color: #fff;
-    background-color: #088BFF;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
-.link{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0,4fr));
-    margin-top: 20px;
-    gap: 10px;
-}
-.link div p{
-    text-align: right;
-    color: #777;
-    padding-right: 65px;
-}
-.link div:nth-child(1){
-    padding-right: 20px;
-}
-.link div:nth-child(2){
-    padding-right: 10px;
+
+.footer{
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 800px;
 }
